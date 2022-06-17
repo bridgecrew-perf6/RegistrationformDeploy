@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div>
+    <div class="Registration-div">
+        <h1>Registration for PhotoExpo</h1>
+        <form class="regform" name="form" id="Login_form" >
+          <p for="regname">Name</p>
+          <input
+            class="inputname"
+            type="text"
+            name="name"     
+            placeholder="Enter your name"
+          />
+          <p>Email-id</p>
+          <input
+            type="text"
+            name="email"
+            class="inputemail"
+            placeholder="Enter your Email id"
+          />
+          <p>Password</p>
+          <input
+            type="text"
+            name="pass"
+            class="inputpass"
+            placeholder="Enter your password"
+          />
+          <p>Confirm password</p>
+          <input
+            type="text"
+            name="rpass"
+            class="inputpass"
+            placeholder="reenter password"
+          />
+          <div class="checkbox-div">
+            <span>Gender:- </span>
+            <input type="radio" id="male" name="Gender" value="Male" />
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="Gender" value="Female" />
+            <label for="female">Female</label>
+          </div>
+          <div class="dropdown-div">
+            <div class="dropdown-subdiv">
+            <span>Area of Interests:-</span>
+            <input type="checkbox" id="js" name="Interests" value="Photography" />
+            <label for="js">Photography</label>
+            <input
+              type="checkbox"
+              id="react"
+              name="Interests"
+              value="Videography"
+            />
+            <label for="react">Videography</label>
+            <input
+              type="checkbox"
+              id="angular"
+              name="interests"
+              value="Film Maker"
+            />
+            <label for="react">Film Maker</label>
+            </div>
+            
+          </div>
+          <div>
+            <label for="sub">Choose a subscription for entering the competition</label>
+            <select id="sub" name="subscription">
+              <option value="monthly">monthly</option>
+              <option value="yearly">yearly</option>
+              <option value="weekly">weekly</option>
+            </select>
+          </div>
+          <p>Message</p>
+          <textarea
+            class="textarea"
+            cols="30"
+            rows="10"
+            name="msg"
+          ></textarea>
+          <button type="submit" class="submit">Submit</button>
+        </form>
+        </div>
+      </div>
+    
+</body>
+<script src="index.js"></script>
+</html>
